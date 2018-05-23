@@ -4,7 +4,7 @@ This package was based on GAVLab [ATRV description](https://github.com/GAVLab/ga
 
 ## Getting Started
 
-To launch the ATRV-Jr description in rviz clone the repository, compile/source it and run:
+To launch the ATRV-Jr description in rviz, clone the repository, compile/source it and launch it by running:
 ```
 roslaunch atrvjr_description display.launch
 ```
