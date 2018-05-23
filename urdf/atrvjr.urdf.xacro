@@ -58,13 +58,22 @@
       <child link="center_link"/>
   </joint>
 
-  <!-- Imu Link -->
-  <link name="imu_frame"/>
+  <!-- Crossbow Imu Link -->
+  <link name="cbimu_frame"/>
 
-  <joint name="base_imu_joint" type="fixed">
+  <joint name="base_cbimu_joint" type="fixed">
     <origin xyz="0 0 0.267" rpy="0 ${M_PI} 0"/>
     <parent link="center_link"/>
-    <child link="imu_frame"/>
+    <child link="cbimu_frame"/>
+  </joint>
+  
+    <!-- MPU Imu Link -->
+  <link name="mpuimu_frame"/>
+
+  <joint name="base_mpuimu_joint" type="fixed">
+    <origin xyz="0 0 0.35" rpy="0 0 ${M_PI}"/>
+    <parent link="center_link"/>
+    <child link="mpuimu_frame"/>
   </joint>
 
 </robot>
